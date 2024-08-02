@@ -1,0 +1,221 @@
+.container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(251, 210, 249);
+  padding: 18px;
+}
+
+.inner-hero, .inner-already-d, .inner-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.position-text {
+  transition: 0.3s ease-in;
+}
+.position-text:hover {
+  color: rgb(160, 12, 113);
+  cursor: pointer;
+}
+.position-text h2 {
+  font-size: clamp(15px, 4vw, 55px);
+}
+
+#glassess {
+  width: clamp(100px, 45vw, 500px);
+  transition: 0.5s ease;
+}
+#glassess:hover {
+  transform: rotateY(40deg);
+}
+
+@media screen and (max-width: 850px) {
+  .inner-hero, .inner-already-d, .inner-about {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.colorText, nav h2:hover {
+  color: rgb(252, 58, 187);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(157, 0, 255);
+  padding: 10px;
+}
+header h1 {
+  color: rgb(246, 76, 104);
+  font-size: clamp(15px, 4vw, 28px);
+  font-family: sans-serif;
+}
+
+.position-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav h2 {
+  color: white;
+  margin: 10px;
+  transition: 0.2s ease;
+  font-size: clamp(10px, 3vw, 25px);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+nav h2::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(252, 58, 187);
+  top: 46px;
+  margin-left: 2px;
+  width: 0;
+  height: 5px;
+  z-index: 2;
+  transition: 0.3s ease;
+}
+nav h2:hover::after {
+  width: clamp(20px, 12vw, 95px);
+}
+.container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.position-text-a {
+  margin: 10px;
+  transition: 0.3s ease;
+}
+.position-text-a h2 {
+  font-size: clamp(15px, 2vw, 25px);
+  font-weight: 500;
+}
+.position-text-a:hover {
+  cursor: pointer;
+  color: rgb(160, 12, 113);
+}
+
+#CodeSass {
+  width: clamp(300px, 56vw, 800px);
+  border-radius: 20px;
+}
+
+.container-3 {
+  padding: 20px;
+  background-color: rgb(231, 221, 232);
+}
+.container-3 h1 {
+  text-align: center;
+}
+
+.inner-download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-download div {
+  margin: 20px;
+}
+.inner-download h2 {
+  transition: 0.3s ease;
+}
+.inner-download h2:hover {
+  color: rgb(160, 12, 113);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .inner-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inner-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inner-footer .informationf-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inner-footer .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container-4 {
+  background-color: rgb(255, 192, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.inner-already-d div {
+  margin: 10px;
+}
+.inner-already-d h2 {
+  font-size: clamp(15px, 2vw, 25px);
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.inner-already-d h2:hover {
+  color: rgb(160, 12, 113);
+  cursor: pointer;
+}
+
+#CodeSassVsCode {
+  width: clamp(300px, 55vw, 800px);
+  border-radius: 10px;
+}
+
+footer {
+  background-color: rgb(251, 210, 249);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: clamp(300px, 20vw, 500px);
+}
+
+.inner-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inner-footer .informationf-position {
+  display: flex;
+}
+.inner-footer .social-media {
+  display: flex;
+}
+.inner-footer h2 {
+  margin: 10px;
+  font-size: clamp(15px, 2vw, 25px);
+  transition: 0.3s ease;
+}
+.inner-footer h2:hover {
+  color: rgb(160, 12, 113);
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

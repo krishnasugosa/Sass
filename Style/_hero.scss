@@ -1,0 +1,46 @@
+$ContainerColor: rgb(251, 210, 249);
+$Text: rgb(160, 12, 113);
+@mixin SpaceBetweem($align){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: $align;
+}
+
+.container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $ContainerColor;
+    padding: 18px
+}
+
+.inner-hero{
+    @include SpaceBetweem(center);
+}
+
+.position-text{
+    transition: .3s ease-in;
+    &:hover{
+       color: $Text;
+       cursor: pointer;
+    }
+    h2{
+        font-size: clamp(15px,4vw,55px);
+    }
+}
+
+#glassess{
+   width: clamp(100px,45vw,500px);
+   transition: .5s ease;
+   &:hover{
+    transform: rotateY(40deg);
+   }
+}
+
+@media screen and (max-width:850px){
+     .inner-hero{
+        display: flex;
+        flex-direction: column;
+     }
+}
